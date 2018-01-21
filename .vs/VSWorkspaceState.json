@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\node_modules\\bootstrap",
+    "\\node_modules\\bootstrap\\dist",
+    "\\node_modules\\bootstrap\\dist\\css",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\login"
+  ],
+  "SelectedNode": "\\src\\app\\login\\login.component.html",
+  "PreviewInSolutionExplorer": false
+}
