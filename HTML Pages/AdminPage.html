@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="EmpPage.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>    
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand active" "col-sm-4" href="#"><b>Tower Mangement System</b></a>
+                  </div>
+                  
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="active""col-sm-4"><a href="#"><span class="glyphicon glyphicon-user"></span> Welcome Admin...!</a></li>
+                    <li class="active""col-sm-4"><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                  </ul>
+                </div>
+        </nav> 
+
+        <div class="container demo col-sm-4" >
+   <div class="row">
+      
+    
+    <div class="modal fade" id="myModal" role="dialog">
+      
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Register Here.....!</h4>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+              <div class="col-md-12">
+              <form class="form-horizontal">
+              <fieldset>
+              
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="Name (Full name)">Name (Full name)</label>  
+                <div class="col-md-4">
+               <div class="input-group">
+                     <div class="input-group-addon">
+                      <i class="fa fa-user">
+                      </i>
+                     </div>
+                     <input id="Name (Full name)" name="Name (Full name)" type="text" placeholder="Name (Full name)" class="form-control input-md">
+                    </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="Date Of Birth">Date Of Birth</label>  
+                <div class="col-md-4">
+              
+                <div class="input-group">
+                     <div class="input-group-addon">
+                   <i class="fa fa-birthday-cake"></i>
+                      
+                     </div>
+                     <input id="Date Of Birth" name="Date Of Birth" type="text" placeholder="Date Of Birth" class="form-control input-md">
+                    </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="Gender">Gender</label>
+                <div class="col-md-4"> 
+                  <label class="radio-inline" for="Gender-0">
+                    <input type="radio" name="Gender" id="Gender-0" value="1" checked="checked">
+                    Male
+                  </label> 
+                  <label class="radio-inline" for="Gender-1">
+                    <input type="radio" name="Gender" id="Gender-1" value="2">
+                    Female
+                  </label> 
+                  <label class="radio-inline" for="Gender-2">
+                    <input type="radio" name="Gender" id="Gender-2" value="3">
+                    Other
+                  </label>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="col-md-4 control-label col-xs-12" for="Permanent Address">Permanent Address</label>  
+                <div class="col-md-2  col-xs-4">
+                <input id="Permanent Address" name="Permanent Address" type="text" placeholder="District" class="form-control input-md ">
+                </div>
+              
+                <div class="col-md-2 col-xs-4">
+              
+                <input id="Permanent Address" name="Permanent Address" type="text" placeholder="Area" class="form-control input-md ">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="Permanent Address"></label>  
+                <div class="col-md-2  col-xs-4">
+                <input id="Permanent Address" name="Permanent Address" type="text" placeholder="Street" class="form-control input-md ">
+                
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="Phone number ">Phone number </label>  
+                <div class="col-md-4">
+                <div class="input-group">
+                     <div class="input-group-addon">
+                   <i class="fa fa-phone"></i>
+                     </div>
+                  <input id="Phone number " name="Phone number " type="text" placeholder="Primary Phone number " class="form-control input-md">
+                  
+                    </div>
+                    <div class="input-group othertop">
+                     <div class="input-group-addon">
+                      
+                     </div>
+                    </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="Email Address">Email Address</label>  
+                <div class="col-md-4">
+                <div class="input-group">
+                     <div class="input-group-addon">
+                   <i class="fa fa-envelope-o"></i>
+                      
+                     </div>
+                  <input id="Email Address" name="Email Address" type="text" placeholder="Email Address" class="form-control input-md">
+                  
+                    </div>
+                
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="col-md-4 control-label" ></label>  
+                <div class="col-md-6">
+                <a href="#" class="btn btn-success"><span class="glyphicon glyphicon-thumbs-up"></span> Submit</a>
+                <a href="#" class="btn btn-danger" value=""><span class="glyphicon glyphicon-remove-sign"></span> Clear</a>
+                  
+                </div>
+              </div>
+              
+              </fieldset>
+              </form>
+              </div>
+             </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+
+   
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <a href="#menu" class="glyphicon glyphicon-th-list" onclick="openNav()"></a><br/><br/>
+
+    <div class="panel panel-default panel-left">
+        <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="more-less glyphicon glyphicon-plus"></i>
+                   American Tower Corporation
+                </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" >
+            <div class="panel-body">
+                    <button type="button" class="btn btn-labeled btn-success"  data-toggle="modal" data-target="#myModal">
+                            <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Add Employee</button>
+                        <button type="button" class="btn btn-labeled btn-primary" data-toggle="modal" data-target="#myModal">
+                            <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Add vendor</button>
+                        <br />
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="more-less glyphicon glyphicon-plus"></i>
+                    BT Tower
+                </a>
+            </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+                    <button type="button" class="btn btn-labeled btn-success"data-toggle="modal" data-target="#myModal">
+                            <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Add Employee</button>
+                        <button type="button" class="btn btn-labeled btn-primary"data-toggle="modal" data-target="#myModal">
+                            <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Add vendor</button>
+                        <br />
+            </div>
+        </div>
+    </div>
+
+    
+    </div>
+
+</div>    
+</div>
+
+      <div class="container  col-xs-8"  style="margin-top: 0px;" >
+           
+          <div class="text-center">
+                    <div class="outer-form">
+              <table class="table table-hover">
+                    <thead style="color: white; font-weight: normal; background-color:darkslategrey;" >
+                         <h2><font color="white"><i class="glyphicon glyphicon-user"></i> Employee Details</font></h2><br/>
+
+                 <tr>
+                    <th  class="head">S.No.</th>
+                    <th  class="head">Username</th>
+                    <th  class="head">E-mail</th>
+                    <th  class="head">Phone Number</th>
+                    <th  class="head">Location</th>
+                    <th  class="head">Company</th>
+                    <th  class="head">start Date</th>
+                    <th  class="head">Expiry Date</th>
+                    <th  class="head">Status</th>
+                  </tr>
+                 </thead>
+                    <tbody style="border:1px solid; background-color:white; color:#A1A6AB; text-align: left;">
+                        <tr>
+                            <td style="padding: 14px;">01</td>
+                            <td>Swapnil</td>
+                            <td>smulay696@gmail.com</td>
+                            <td>7588946664</td>
+                            <td>pune India</td>
+                            <td>ATC</td>
+                            <td>1-2-2018</td>
+                            <td>31-12-2018</td>
+
+                            <td>
+                             <label class="switch">
+                             <input type="checkbox" checked>
+                             <span class="slider round"></span>
+                             </label>
+                            </td>
+                          </tr>
+                          <tr>
+                                  <td style="padding: 14px;">01</td>
+                                  <td>Sachin</td>
+                                  <td>zine.sachin8509@gmail.com</td>
+                                  <td>7350867124</td>
+                                  <td>Nagar</td>
+                                  <td>BTC</td>
+                                  <td>1-2-2018</td>
+                                  <td>31-12-2018</td>
+    
+                                  <td>
+                                   <label class="switch">
+                                   <input type="checkbox" checked>
+                                   <span class="slider round"></span>
+                                   </label>
+                                  </td>
+                                </tr>
+                                <tr>
+                                      <td style="padding: 14px;">01</td>
+                                      <td>Sachin</td>
+                                      <td>zine.sachin8509@gmail.com</td>
+                                      <td>7350867124</td>
+                                      <td>Nagar</td>
+                                      <td>BTC</td>
+                                      <td>1-2-2018</td>
+                                      <td>31-12-2018</td>
+        
+                                      <td>
+                                       <label class="switch">
+                                       <input type="checkbox" checked>
+                                       <span class="slider round"></span>
+                                       </label>
+                                      </td>
+                                    </tr>
+                                    
+                          
+                                    
+                                <script>
+                                      function myFunction() {
+                                        var input, filter, table, tr, td,th, i;
+                                        input = document.getElementById("myInput");
+                                        filter = input.value.toUpperCase();
+                                        table = document.getElementById("myTable");
+                                        tr = table.getElementsByTagName("tr");
+                                        for (i = 0; i < tr.length; i++) {
+                                          td = tr[i].getElementsByTagName("th")[0];
+                                          if (td) {
+                                            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                                              tr[i].style.display = "";
+                                            } else {
+                                              tr[i].style.display = "none";
+                                            }
+                                          }       
+                                        }
+                                      }
+                                      </script>
+                              </script>
+                          </tbody>
+                </table>
+              </div>
+            </div>
+
+      <div class="col-md-12"  style="margin-top: 0px;" >
+                            <div class="text-center">
+                                        <div class="outer-form">
+                                  <table class="table-hover table vertical">
+                                        <thead style="color: white; font-weight: normal; background-color:darkslategrey;" >
+                                             <h2><font color="white"><i class="glyphicon glyphicon-user"></i> Vendor Details</font></h2><br/>
+                  
+                                    <tr>
+                                        <th  class="head">S.No.</th>
+                                        <th  class="head">Username</th>
+                                        <th  class="head">E-mail</th>
+                                        <th  class="head">Phone Number</th>
+                                        <th  class="head">Location</th>
+                                        <th  class="head">Company</th>
+                                        <th  class="head">Start Date</th>
+                                        <th  class="head">Expiry Date</th>
+                                        <th  class="head">Status</th>
+                                      </tr>
+                                    </thead>
+                                        <tbody style="border:1px solid; background-color:white; color:#A1A6AB; text-align: left;">
+                                            <tr>
+                                                <td style="padding: 14px;">01</td>
+                                                <td>swapnil</td>
+                                                <td>smulay696@gmail.com</td>
+                                                <td>7588946664</td>
+                                                <td>pune India</td>
+                                                <td>ATC</td>
+                                                <td>1-2-2018</td>
+                                                <td>31-12-2018</td>
+                  
+                                                <td>
+                                                 <label class="switch">
+                                                 <input type="checkbox" checked>
+                                                 <span class="slider round"></span>
+                                                 </label>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                      <td style="padding: 14px;">01</td>
+                                                      <td>sachin</td>
+                                                      <td>schin8509@gmail.com</td>
+                                                      <td>7588946664</td>
+                                                      <td>Nagar</td>
+                                                      <td>BTC</td>
+                                                      <td>1-2-2018</td>
+                                                      <td>31-12-2018</td>
+                        
+                                                      <td>
+                                                       <label class="switch">
+                                                       <input type="checkbox" checked>
+                                                       <span class="slider round"></span>
+                                                       </label>
+                                                      </td>
+                                                    </tr>
+                                                    <tr>
+                                                          <td style="padding: 14px;">01</td>
+                                                          <td>sachin</td>
+                                                          <td>schin8509@gmail.com</td>
+                                                          <td>7588946664</td>
+                                                          <td>Nagar</td>
+                                                          <td>BTC</td>
+                                                          <td>1-2-2018</td>
+                                                          <td>31-12-2018</td>
+                            
+                                                          <td>
+                                                           <label class="switch">
+                                                           <input type="checkbox" checked>
+                                                           <span class="slider round"></span>
+                                                           </label>
+                                                          </td>
+                                                        </tr>
+                                                        
+                                                        
+                                                    <script>
+                                                          function myFunction() {
+                                                            var input, filter, table, tr, td,th, i;
+                                                            input = document.getElementById("myInput");
+                                                            filter = input.value.toUpperCase();
+                                                            table = document.getElementById("myTable");
+                                                            tr = table.getElementsByTagName("tr");
+                                                            for (i = 0; i < tr.length; i++) {
+                                                              td = tr[i].getElementsByTagName("th")[0];
+                                                              if (td) {
+                                                                if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                                                                  tr[i].style.display = "";
+                                                                } else {
+                                                                  tr[i].style.display = "none";
+                                                                }
+                                                              }       
+                                                            }
+                                                          }
+                                                          </script>
+                                                  </script>
+                                              </tbody>
+                                              </table>
+                                            </div>
+                                          </div>
+                                        </div>    </div>
+  </body>
+</html>

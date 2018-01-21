@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand active" "col-sm-4" href="#"><b>American Tower Services</b></a>
+          </div>
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active""col-sm-4"><a href="#"><span class="glyphicon glyphicon-user"></span> Welcome Admin..!</a></li>
+            <li class="active""col-sm-4"><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+
+ <div class="row">     
+      <div class="container demo col-md-4" >
+     
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <a href="#menu" class="glyphicon glyphicon-th-list"></a><br/><br/>
+            <div class="panel panel-default panel-left">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="more-less glyphicon glyphicon-plus"></i>
+                           American Tower Corporation
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                            <button type="button" class="btn btn-labeled btn-success">
+                                    <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span> Employee</button>
+                                <button type="button" class="btn btn-labeled btn-primary">
+                                    <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span> Vendor</button>
+                                <br />
+                    </div>
+                </div>
+            </div>
+    
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="more-less glyphicon glyphicon-plus"></i>
+                            BT Tower
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                            <button type="button" class="btn btn-labeled btn-success">
+                                    <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span> Employee</button>
+                                <button type="button" class="btn btn-labeled btn-primary">
+                                    <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span> Vendor</button>
+                                <br />
+                    </div>
+                </div>
+            </div>
+    
+            </div>
+          </div>
+    <div class="col-md-8">
+        <br/><br/><br/>
+            <table class="table table-responsive">
+              <tbody class="bg-info text-black">
+                <tr>
+                <th>Tower Company Name</th>
+                  <td>American Tower Corporation</td>
+                  
+                </tr>
+                <tr></tr>
+                <tr>
+                  <th>Corporate Address</th>
+                  <td>Mumbai, India</td>
+                  
+                </tr>
+                <tr>
+                  <th>Tel/Fax</th>
+                  <td>020-323422</td>
+                  
+                </tr>
+                <tr>
+                  <th>Contact Person</th>
+                  <td>Mr.Prafullh Kadam</td>
+                
+                </tr>
+                <tr>
+                  <th>Website</th>
+                  <td>https:/atc.org.in</td>
+                            
+                </tr>
+              </tbody>
+            </table>
+            <div class="panel-body panel-right">
+                    <button type="button" class="btn btn-labeled btn-success">
+                            <span class="btn-label"><i class="glyphicon glyphicon-thumbs-up"></i></span> Save</button>
+                        <button type="button" class="btn btn-labeled btn-primary">
+                            <span class="btn-label"><i class="glyphicon glyphicon-remove"></i></span> Cancel</button>
+                        <br />
+            </div>
+          </div>
+    </div>
+  </body>
+</html>
