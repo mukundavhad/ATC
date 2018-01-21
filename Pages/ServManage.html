@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="EmpPage.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="HM.js"></script>
+</head>
+
+<body>    
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand active" "col-sm-4" href="#"><b>Tower Mangement System</b></a>
+                  </div>
+                  
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="active""col-sm-4"><a href="#"><span class="glyphicon glyphicon-user"></span> Welcome Employee...!</a></li>
+                    <li class="active""col-sm-4"><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                  </ul>
+                </div>
+        </nav> 
+
+   <div class="row">
+      <div class="col-md-2">
+        <blockquote>
+            <a href="#menu" class="glyphicon glyphicon-th-list" onclick="openNav()"></a><br/><br/>
+                    
+            <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="nav nav-pills nav-stacked list">
+                <li><a href="EmpPage.html">Dashboard</a></li>
+                <li><a href="VendManage.html">Vendor Management</a></li>
+                <li class="active"><a href="ServManage.html">Service Management</a></li>
+                <li><a href="#">Manage Materials</a></li>
+                <li><a href="#">Tower Management</a></li>
+            </ul>
+            </div>
+    </blockquote>
+      </div>
+    
+      <div class="container-fluid  col-sm-10 "  style="margin-top: 0px;" >
+           
+            <div class="col-md-12 text-center">
+                      <div class="outer-form">
+                <table class="table-hover table vertical">
+                      <thead style="color: white; font-weight: normal; background-color:darkslategrey;" >
+                           <h2><font color="white"><i class="glyphicon glyphicon-briefcase"></i> Services</font></h2>
+
+                   <input type="text" id="myInput" onkeyup="myFunction()" style="float:right" placeholder=" Search a Service..." title="Type in a name"><br/>
+                            
+                        <tr>
+                          <th  class="head">S.No.</th>
+                          <th  class="head">Service Parent ID</th>
+                          <th  class="head">Service Code</th>
+                          <th  class="head">Description</th>
+                          <th  class="head">Price/Rate</th>
+                          <th  class="head">Valid From</th>
+                          <th  class="head">Valid Through</th>
+                          </tr>
+                      </thead>
+                      <tbody style="border:1px solid; background-color:white; color:#A1A6AB; text-align: left;">
+                            <tr>
+                              <td style="padding: 14px;">01</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            
+                            </tr>
+                            <tr>
+                              <td style="padding: 14px;">02</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                                                           
+                            </tr>
+                            <tr>
+                              <td style="padding: 14px;">03</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            
+                            </tr>
+                                      
+                                  <script>
+                                        function myFunction() {
+                                          var input, filter, table, tr, td,th, i;
+                                          input = document.getElementById("myInput");
+                                          filter = input.value.toUpperCase();
+                                          table = document.getElementById("myTable");
+                                          tr = table.getElementsByTagName("tr");
+                                          for (i = 0; i < tr.length; i++) {
+                                            td = tr[i].getElementsByTagName("th")[0];
+                                            if (td) {
+                                              if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                                                tr[i].style.display = "";
+                                              } else {
+                                                tr[i].style.display = "none";
+                                              }
+                                            }       
+                                          }
+                                        }
+                                        </script>
+                                </script>
+                            </tbody>
+                            </table>
+                            <br/>
+
+                            <h3><font color="white">Add a New Service</font></h3>
+                            <form method="POST" action="#" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <div class="input-group input-file" name="Fichier1">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default btn-choose pull-right" type="button">Choose</button>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder='Choose a file...' />
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-warning btn-reset" type="button">Reset</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <center><button type="submit" class="btn btn-primary">Submit</button></center>
+                                </div>
+                                
+                            </form>
+                            
+                            
+                        </div>         
+                    </div>
+        
+    </div>
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+  </body>
+</html>
