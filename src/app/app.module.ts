@@ -9,6 +9,8 @@ import { LoginComponent } from './login/login.component';
 // or
 import { BsDropdownModule } from 'ngx-bootstrap';
 import { HomeComponent } from './home/home.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ActionBoxComponent } from './dashboard/action-box/action-box.component';
 
 
 
@@ -16,7 +18,9 @@ import { HomeComponent } from './home/home.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    DashboardComponent,
+    ActionBoxComponent
   ],
   imports: [
     BrowserModule,

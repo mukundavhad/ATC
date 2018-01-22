@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
     if(this.userName.length<5)
       this.Errors.push("UserName should be more than 4 char");
     if (this.userPwd.length<9)
-      this.Errors.push("UserName should be more than 4 char");
+      this.Errors.push("Password should be more than 8 char");
     return true
   }
 }
