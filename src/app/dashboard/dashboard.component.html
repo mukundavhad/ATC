@@ -1,0 +1,4 @@
+<app-action-box *ngFor="let actionbox of actionDetail" [actionModel]="actionbox" (OnViewDetail)="LoadGridData($event)"  >
+
+</app-action-box>
+{{loadedData}}
