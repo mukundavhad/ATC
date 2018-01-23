@@ -22,8 +22,7 @@ export class ActionBoxComponent implements OnInit {
     this.count =this.actionModel.count;
     this.title = this.actionModel.title;
     this.subtitle =this.actionModel.subtitle;
-    this.loadData="inittiated";
-  }
+   }
   viewDetail(){
     this.OnViewDetail.emit("Inititated");
   }

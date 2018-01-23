@@ -11,6 +11,8 @@ import { BsDropdownModule } from 'ngx-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ActionBoxComponent } from './dashboard/action-box/action-box.component';
+import { MainHeaderComponent } from './main-header/main-header.component';
+import { CopyrightComponent } from './copyright/copyright.component';
 
 
 
@@ -20,7 +22,9 @@ import { ActionBoxComponent } from './dashboard/action-box/action-box.component'
     LoginComponent,
     HomeComponent,
     DashboardComponent,
-    ActionBoxComponent
+    ActionBoxComponent,
+    MainHeaderComponent,
+    CopyrightComponent
   ],
   imports: [
     BrowserModule,

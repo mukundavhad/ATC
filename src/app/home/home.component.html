@@ -1,43 +1,26 @@
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="HomePage.html"><b>&nbsp;&nbsp;&nbsp;Tower Management System</b></a>
+<app-main-header></app-main-header>
+<br />
+<br />
+<div class="col-md-6">
+  <div class="brand-heading">
+    <div class="center">
+      <h1>
+        <font size="15">
+          <font color="white">Tower Management System</font>
+        </font>
+      </h1>
     </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="active"><a href="#">About Us</a></li>
-      <li>&nbsp;&nbsp;&nbsp;</li>
-      <li class="active"><a href="#">Contact Us</a></li>
-      <li>&nbsp;&nbsp;&nbsp;</li>
-
-      <li class="dropdown active">
-
-        <div class="btn-group" dropdown>
-          <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
-            Button dropdown <span class="caret"></span>
-          </button>
-
-          <ul *dropdownMenu class="dropdown-menu" style="padding: 20px;min-width: 325px;">
-            <app-login></app-login>
-            
-          </ul>
-        </div>
-
-        <a class="dropdown-toggle" data-toggle="dropdown">Log in <b class="caret"></b></a>
-
-      </li>
-    </ul>
+    <div class="center">
+      <p>
+        <font color="white">--- It helps to Manage Employees
+          <br>Solve the Problems about Towers ---</font>
+      </p>
+    </div>
   </div>
-</nav>
-<br /><br /><br /><br />
-<div class="brand-heading">
-  <div class="center"><h1><font size="15"><font color="white">Tower Management System</font></font></h1></div>
-  <div class="center"><p><font color="white">--- It helps to Manage Employees<br>Solve the Problems about Towers ---</font></p></div>
+</div>
+<div class="col-md-6">
   <app-login></app-login>
 </div>
-<app-dashboard></app-dashboard>
-<footer>
-  <div class="text-center">
-    <font color="white"> <p>Copyright &copy; Tower Management System 2017</p></font>
-  </div>
-</footer>
+<div>
+  <app-copyright></app-copyright>
+</div>
