@@ -13,7 +13,6 @@ export class RegiComponent implements OnInit {
   public Location: string = ""
   public Company: string =""
 
-
   constructor() { }
 
   ngOnInit() {

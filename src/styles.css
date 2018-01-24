@@ -59,11 +59,10 @@ input[type="number"] {
 
 body {
   font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background: url('assets/ats.jpg');
   background-repeat: no-repeat;
   background-size: 1380px 670px;
+  background-color: gray;
 }
-
 .brand-heading {
   font-size: 25px;
 }

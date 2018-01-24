@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 
@@ -9,7 +8,10 @@ import { LoginComponent } from './login/login.component';
 // or
 import { BsDropdownModule } from 'ngx-bootstrap';
 import { HomeComponent } from './home/home.component';
-import { RegiComponent } from './regi/regi.component';
+import { AdminComponent } from './admin/admin.component';
+import { RegiComponent } from './Admin/regi/regi.component';
+import { AmenuComponent } from './Admin/amenu/amenu.component';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
 
 
 
@@ -18,12 +20,18 @@ import { RegiComponent } from './regi/regi.component';
     AppComponent,
     LoginComponent,
     HomeComponent,
-    RegiComponent
+    AdminComponent,
+    RegiComponent,
+    AmenuComponent,
+  
+    
+   
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    AccordionModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

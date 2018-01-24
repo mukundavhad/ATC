@@ -1,10 +1,8 @@
-img{max-width:100%;}
-
 body {
     text-align: center;
 	font-family: 'Raleway', sans-serif;
-    background: url() non-repeat -350px -100px;
-    background-size:;
+    background-size: cover;
+    background-color: rgba(43, 2, 2, 0.62);
 }
 .center-container {
     padding: 0;
@@ -15,22 +13,19 @@ body {
     padding: 3em 0;
 }
 .header-w3l h1{
-margin-top:-2%;
 	font-size:3em;
     color:#fff;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 .header-w3l h1 span {
-
-
     font-weight: 800;
 }
 /*--//header--*/
 
 /*--main--*/
 .main-content-agile {
-    
+    margin: 0 auto;
     margin-left: 54%;
     width: 32%;
 }
@@ -50,7 +45,7 @@ margin-top:-2%;
     padding: 1em 0;
 }
 .sub-main-w3{
-	position:center;
+	position:relative;
 	padding: 2em 0 1em;
 }
 .sub-main-w3 input[type="text"],.sub-main-w3 input[type="email"],.sub-main-w3 input[type="tel"], .sub-main-w3 input[type="password"] {
