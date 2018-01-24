@@ -9,7 +9,7 @@ export class LoginComponent implements OnInit {
   public userName: string = ""
   public userPwd: string = ""
   public captcha: string = ""
-  //public Errors: string[];
+  
   public Errors: Array<string> = [];
 
   constructor() { }
