@@ -3,16 +3,16 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './home/login/login.component';
 
 
 // or
 import { BsDropdownModule } from 'ngx-bootstrap';
 import { HomeComponent } from './home/home.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { ActionBoxComponent } from './dashboard/action-box/action-box.component';
+import { DashboardComponent } from './emp-page/dashboard/dashboard.component';
+import { ActionBoxComponent } from './emp-page/dashboard/action-box/action-box.component';
 import { MainHeaderComponent } from './main-header/main-header.component';
-import { CopyrightComponent } from './copyright/copyright.component';
+import { CopyrightComponent } from './home/copyright/copyright.component';
 
 
 
