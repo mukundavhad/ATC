@@ -1,25 +1,25 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CopyrightComponent } from './copyright.component';
+import { EmpPageComponent } from './emp-page.component';
 
-describe('CopyrightComponent', () => {
-  let component: CopyrightComponent;
-  let fixture: ComponentFixture<CopyrightComponent>;
+describe('EmpPageComponent', () => {
+  let component: EmpPageComponent;
+  let fixture: ComponentFixture<EmpPageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CopyrightComponent ]
+      declarations: [ EmpPageComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CopyrightComponent);
+    fixture = TestBed.createComponent(EmpPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should be created', () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });
