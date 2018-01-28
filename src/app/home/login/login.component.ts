@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,18 +12,23 @@ export class LoginComponent implements OnInit {
   public captcha: string = ""
   
   public Errors: Array<string> = [];
-
-  constructor() { }
+  constructor(private router:Router) {
+ 
+   }
 
   ngOnInit() {
+  
+    
   }
 
   loginClick() {
     if (!this.validate()) {
       return false
     }
-  }
+    this.router.navigate(['/Dashboard']);
+    }
   validate(): boolean {
+    this.Errors=[]
     if(this.userName.length<5)
       this.Errors.push("UserName should be more than 4 char");
     if (this.userPwd.length<9)

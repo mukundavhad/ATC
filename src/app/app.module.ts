@@ -1,20 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './home/login/login.component';
-
-
-// or
 import { BsDropdownModule } from 'ngx-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './emp-page/dashboard/dashboard.component';
 import { ActionBoxComponent } from './emp-page/dashboard/action-box/action-box.component';
 import { MainHeaderComponent } from './main-header/main-header.component';
 import { CopyrightComponent } from './home/copyright/copyright.component';
+import { from } from 'rxjs/observable/from';
+import { Router } from '@angular/router/src/router';
+import { appRoutes } from './routeconfig';
+import { ServManageComponent } from './emp-page/serv-manage/serv-manage.component';
+import { VendManageComponent} from './emp-page/vend-manage/vend-manage.component';
+import { EmpMenuComponent } from 'app/emp-page/emp-menu/emp-menu.component';
+import { NewServiceComponent } from 'app/emp-page/serv-manage/new-service/new-service.component';
 
-
+import{AgGridModule} from 'ag-grid-angular';
 
 @NgModule({
   declarations: [
@@ -24,12 +28,22 @@ import { CopyrightComponent } from './home/copyright/copyright.component';
     DashboardComponent,
     ActionBoxComponent,
     MainHeaderComponent,
-    CopyrightComponent
+    CopyrightComponent,
+    ServManageComponent,
+    VendManageComponent,
+    EmpMenuComponent,
+    NewServiceComponent,
+    
   ],
   imports: [
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    ),
     BrowserModule,
     FormsModule,
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    AgGridModule.withComponents([ ]),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,8 @@
-<app-action-box *ngFor="let actionbox of actionDetail" [actionModel]="actionbox" (OnViewDetail)="LoadGridData($event)"  >
+<!-- <app-action-box *ngFor="let actionbox of actionDetail" [actionModel]="actionbox" (OnViewDetail)="LoadGridData($event)"  >
+</app-action-box> -->
 
-</app-action-box>
-{{loadedData}}
+
+<ag-grid-angular  class="ag-theme-fresh"
+[rowData]="ctlrowData"
+[columnDefs]="ctlcolumnDefs"></ag-grid-angular>
+
