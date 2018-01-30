@@ -17,10 +17,19 @@ import { ServManageComponent } from './emp-page/serv-manage/serv-manage.componen
 import { VendManageComponent} from './emp-page/vend-manage/vend-manage.component';
 import { EmpMenuComponent } from 'app/emp-page/emp-menu/emp-menu.component';
 import { NewServiceComponent } from 'app/emp-page/serv-manage/new-service/new-service.component';
+import { AccordionModule } from 'ngx-bootstrap';
+import { ModalModule } from 'ngx-bootstrap/modal';
+
 
 import{AgGridModule} from 'ag-grid-angular';
+import { AdminMenuComponent } from 'app/admin-page/admin-menu/admin-menu.component';
+import { UserRegComponent } from 'app/admin-page/user-reg/user-reg.component';
+import { EmpGridComponent } from './admin-page/emp-grid/emp-grid.component';
+import { VedGridComponent } from './admin-page/ved-grid/ved-grid.component';
+import { HeaderComponent } from './admin-page/header/header.component';
 
 @NgModule({
+
   declarations: [
     AppComponent,
     LoginComponent,
@@ -33,6 +42,12 @@ import{AgGridModule} from 'ag-grid-angular';
     VendManageComponent,
     EmpMenuComponent,
     NewServiceComponent,
+    AdminMenuComponent,
+    UserRegComponent,
+    EmpGridComponent,
+    VedGridComponent,
+    HeaderComponent,
+    
     
   ],
   imports: [
@@ -44,6 +59,8 @@ import{AgGridModule} from 'ag-grid-angular';
     FormsModule,
     BsDropdownModule.forRoot(),
     AgGridModule.withComponents([ ]),
+    AccordionModule.forRoot(),
+    ModalModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

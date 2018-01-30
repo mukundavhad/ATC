@@ -10,6 +10,8 @@ import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
   styleUrls: ['./admin-menu.component.css']
 })
 export class AdminMenuComponent {
+  visible1: boolean;
+  visible: boolean;
 
   log(event: boolean) {
     console.log(`Accordion has been ${event ? 'opened' : 'closed'}`);
@@ -21,4 +23,11 @@ export class AdminMenuComponent {
     this.modalRef = this.modalService.show(template);
 
   }
+
+  viewDetail(){
+this.visible=!this.visible;
+}
+   VviewDetail(){
+    this.visible1=!this.visible1;
+    }
 }

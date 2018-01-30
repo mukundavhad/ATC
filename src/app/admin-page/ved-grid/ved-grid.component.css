@@ -1,0 +1,20 @@
+.grid-row{
+    border:1px solid; background-color:white; color:#A1A6AB; text-align: left;
+  }
+  .ag-header-cell{
+    color: white; font-weight: normal; background-color:darkslategrey;
+  }
+  .ag-row{
+    border:1px solid; background-color:white; color:#A1A6AB; text-align: left;
+  
+  }
+  .center h2{
+margin-left: 300px;
+margin-inline-end: 0%;
+color: white;
+text-decoration-line:underline;
+  }
+  .center{
+
+    margin-top: -40px;
+  }
