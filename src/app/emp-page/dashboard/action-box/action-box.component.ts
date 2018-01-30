@@ -6,9 +6,10 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./action-box.component.css']
 })
 export class ActionBoxComponent implements OnInit {
+  visible: boolean;
 
   @Input()
-  public actionModel:any={};
+  public actionModel: any = {};
 
   @Output() OnViewDetail = new EventEmitter<string>();;
 
@@ -19,12 +20,9 @@ export class ActionBoxComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.count =this.actionModel.count;
+    this.count = this.actionModel.count;
     this.title = this.actionModel.title;
-    this.subtitle =this.actionModel.subtitle;
-   }
-  viewDetail(){
-    this.OnViewDetail.emit("Inititated");
+    this.subtitle = this.actionModel.subtitle;
   }
-
+ 
 }

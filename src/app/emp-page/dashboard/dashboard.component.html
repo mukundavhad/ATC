@@ -1,8 +1,8 @@
-<!-- <app-action-box *ngFor="let actionbox of actionDetail" [actionModel]="actionbox" (OnViewDetail)="LoadGridData($event)"  >
-</app-action-box> -->
+<div class="col-md-9">
+<app-action-box *ngFor="let actionbox of actionDetail" [actionModel]="actionbox" (OnViewDetail)="LoadGridData($event)" (click)="viewDetail1()">
+</app-action-box>
+</div>
 
-
-<ag-grid-angular style="height: 525px; width: 900px;" class="ag-theme-fresh"
-[rowData]="ctlrowData"
-[columnDefs]="ctlcolumnDefs">
-</ag-grid-angular>
+<div class="col-sm-6" *ngIf="visible3">
+    <app-gridsystem></app-gridsystem>
+</div>

@@ -15,5 +15,10 @@
 .list a{
     margin-top: 5px;
     color: white;
+    font-size: 18px;
 
+  }
+.menu{
+    font-size: 10px;
+    color: white;
   }

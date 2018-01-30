@@ -15,8 +15,8 @@ export const appRoutes: Routes = [
     { path: 'Dashboard',      component: DashboardComponent },
     { path: 'ServManage',      component: ServManageComponent },
     { path: 'VendManage',      component: VendManageComponent },
-    {path:'emp-grid',component:EmpGridComponent},
-    {path:'header',component:HeaderComponent},
+    { path:'emp-grid',component:EmpGridComponent},
+    { path:'header',component:HeaderComponent},
     { path: '',      component: LoginComponent },
 
 ];

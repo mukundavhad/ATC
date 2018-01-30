@@ -6,15 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+  visible3: boolean;
   public actionDetail: any[];
   public gridData: any[];
   public loadedData: string = "";
-  /////////////Grid properties
-  public ctlrowData: any[];
-  public ctlcolumnDefs: any[];
-
-
-
 
   constructor() { }
   LoadGridData(event): any[] {
@@ -23,6 +18,7 @@ export class DashboardComponent implements OnInit {
     return [];
   }
   ngOnInit() {
+
     this.actionDetail = [
       {
         count: 10,
@@ -42,21 +38,9 @@ export class DashboardComponent implements OnInit {
         subtitle: "View Details"
       }
 
-    ];
-
-    this.ctlcolumnDefs = [
-      { headerName: "Make", field: "make", width: 300 },
-      { headerName: "Model", field: "model", width: 300 },
-      { headerName: "Price", field: "price", width: 300 }
-    ];
-
-    this.ctlrowData = [
-      { make: "Toyota", model: "Celica", price: 35000 },
-      { make: "Ford", model: "Mondeo", price: 32000 },
-      { make: "Porsche", model: "Boxter", price: 72000 }
-    ];
-
-    
+    ]
   }
-
+  viewDetail1() {
+    this.visible3=!this.visible3;
+  }
 }

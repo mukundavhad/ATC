@@ -25,7 +25,7 @@ export class AdminMenuComponent {
   }
 
   viewDetail(){
-this.visible=!this.visible;
+    this.visible=!this.visible;
 }
    VviewDetail(){
     this.visible1=!this.visible1;
