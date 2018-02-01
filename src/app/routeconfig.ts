@@ -8,6 +8,7 @@ import { AdminMenuComponent } from 'app/admin-page/admin-menu/admin-menu.compone
 import { UserRegComponent } from 'app/admin-page/user-reg/user-reg.component';
 import { EmpGridComponent } from 'app/admin-page/emp-grid/emp-grid.component';
 import { HeaderComponent } from 'app/admin-page/header/header.component';
+import { AdminPageComponent } from 'app/admin-page/admin-page.component';
 
 export const appRoutes: Routes = [
     { path: 'Login', component: LoginComponent},
@@ -17,6 +18,8 @@ export const appRoutes: Routes = [
     { path: 'VendManage',      component: VendManageComponent },
     { path:'emp-grid',component:EmpGridComponent},
     { path:'header',component:HeaderComponent},
+    { path: 'AdminPage',      component: AdminPageComponent },
+
     { path: '',      component: LoginComponent },
 
 ];

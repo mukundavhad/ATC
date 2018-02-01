@@ -19,7 +19,7 @@ import { EmpMenuComponent } from 'app/emp-page/emp-menu/emp-menu.component';
 import { NewServiceComponent } from 'app/emp-page/serv-manage/new-service/new-service.component';
 import { AccordionModule } from 'ngx-bootstrap';
 import { ModalModule } from 'ngx-bootstrap/modal';
-import{AgGridModule} from 'ag-grid-angular';
+import { AgGridModule } from 'ag-grid-angular';
 import { AdminMenuComponent } from 'app/admin-page/admin-menu/admin-menu.component';
 import { UserRegComponent } from 'app/admin-page/user-reg/user-reg.component';
 import { GridsystemComponent } from './emp-page/gridsystem/gridsystem.component';
@@ -27,6 +27,8 @@ import { EmpGridComponent } from './admin-page/emp-grid/emp-grid.component';
 import { VedGridComponent } from './admin-page/ved-grid/ved-grid.component';
 import { HeaderComponent } from './admin-page/header/header.component';
 import { EmpHeaderComponent } from './emp-page/emp-header/emp-header.component';
+import { AdminPageComponent } from 'app/admin-page/admin-page.component';
+
 
 @NgModule({
 
@@ -48,7 +50,8 @@ import { EmpHeaderComponent } from './emp-page/emp-header/emp-header.component';
     VedGridComponent,
     HeaderComponent,
     GridsystemComponent,
-    EmpHeaderComponent,    
+    EmpHeaderComponent, 
+    AdminPageComponent   
     
   ],
   imports: [

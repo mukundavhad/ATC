@@ -12,9 +12,12 @@ var users = [
   new User('sachin','sachin')
 ];
 
+var users1 = [
+  new User('admin','admin')
+];
+
 @Injectable()
 export class AuthenticationService {
-  
 
   constructor(private router: Router) { }
 
@@ -25,9 +28,16 @@ export class AuthenticationService {
  
   login(user){
     var authenticatedUser = users.find(u => u.email === user.email);
+    var authenticatedUser1 = users1.find(u => u.email === user.email);
+    
     if (authenticatedUser && authenticatedUser.password === user.password){
       localStorage.setItem("users",  JSON.stringify(authenticatedUser));
       this.router.navigate(['Dashboard']);      
+      return true;
+    }
+    if (authenticatedUser1 && authenticatedUser1.password === user.password){
+      localStorage.setItem("users",  JSON.stringify(authenticatedUser1));
+      this.router.navigate(['AdminPage']);      
       return true;
     }
     return false;
