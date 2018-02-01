@@ -1,3 +1,9 @@
-.grid{
+.grid {
     margin-top: 70px;
+}
+.ag-header-cell-sorted-asc {
+    color: white;
+}
+.ag-header-cell span{
+    color: white;
 }

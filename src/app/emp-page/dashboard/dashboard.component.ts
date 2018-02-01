@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationService } from 'app/home/authentication.service';
 
 @Component({
   selector: 'app-dashboard',
+  
+  providers: [AuthenticationService],
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
@@ -19,6 +22,8 @@ export class DashboardComponent implements OnInit {
   }
   ngOnInit() {
 
+    
+    
     this.actionDetail = [
       {
         count: 10,

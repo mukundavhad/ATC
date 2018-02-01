@@ -1,28 +1,23 @@
+<app-home></app-home>
+
 <li>
   <div class="row">
-    <app-home></app-home>
     <div class="col-md-6">
       <form action="" method="post" name="Login_Form" class="form-signin">
         <hr class="colorgraph">
         <br>
 
-        <input type="text" (input)="validate()" class="form-control" name="Username" placeholder="Username" required autofocus [(ngModel)]="userName"
-        />
-        <div class="ErrorMesssage" *ngIf="userName!='' && userName.length<4 "> User should have atleast 4 chars in name</div>
-        <input type="password" (input)="validate()" class="form-control" name="Password" placeholder="Password" required="" [(ngModel)]="userPwd"
-        />
-        <div class="ErrorMesssage" *ngIf="userPwd!='' && userPwd.length<8 "> Password should have atleast 8 chars</div>
-
-        <input type="number" class="form-control" name="Captcha" placeholder="Enter Captcha Code" required="" [(ngModel)]="captcha"
-        />
-        <div class="ErrorMesssage" *ngIf="Errors && Errors.length>0">
-          <ul>
-            <li *ngFor="let error of Errors">
-              {{error}}
-            </li>
-          </ul>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" (click)="loginClick()" type="button">Login</button>
+        <input [(ngModel)]="user.email" id="email" type="email" class="form-control validate" name="Username" placeholder="Username"
+          required="" autofocus="" />
+        <br />
+        <input [(ngModel)]="user.password" id="password" type="password" class="form-control validate" name="Password" placeholder="Password"
+          required="" />
+        <br />
+        <span class="ErrorMessage">{{errorMsg}}</span>
+        <br />
+        <br />
+        <button (click)="login()" class="btn btn-lg btn-primary btn-block" name="action" value="Login" type="Submit">Login</button>
+        <br />
         <br>
         <a href="#">
           <h4>

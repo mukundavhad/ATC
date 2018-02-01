@@ -26,6 +26,7 @@ import { GridsystemComponent } from './emp-page/gridsystem/gridsystem.component'
 import { EmpGridComponent } from './admin-page/emp-grid/emp-grid.component';
 import { VedGridComponent } from './admin-page/ved-grid/ved-grid.component';
 import { HeaderComponent } from './admin-page/header/header.component';
+import { EmpHeaderComponent } from './emp-page/emp-header/emp-header.component';
 
 @NgModule({
 
@@ -46,7 +47,8 @@ import { HeaderComponent } from './admin-page/header/header.component';
     EmpGridComponent,
     VedGridComponent,
     HeaderComponent,
-    GridsystemComponent,    
+    GridsystemComponent,
+    EmpHeaderComponent,    
     
   ],
   imports: [

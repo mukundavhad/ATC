@@ -1,38 +1,31 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
+import { User, AuthenticationService } from 'app/home/authentication.service';
 
 @Component({
   selector: 'app-login',
+  providers: [AuthenticationService],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  public userName: string = ""
-  public userPwd: string = ""
-  public captcha: string = ""
-  
-  public Errors: Array<string> = [];
-  constructor(private router:Router) {
- 
-   }
+  public errorMsg = "";
+  public user = new User('', '');
+  public userName: string = "";
+  public userPwd: string = "";
 
-  ngOnInit() {
-  
-    
+  public Errors: Array<string> = [];
+  constructor(private _service: AuthenticationService) {
+
   }
 
-  loginClick() {
-    if (!this.validate()) {
-      return false
+  ngOnInit() {
+  }
+
+  login() {
+    if (!this._service.login(this.user)) {
+      this.errorMsg = 'Failed to login';
+
     }
-    this.router.navigate(['/Dashboard']);
-    }
-  validate(): boolean {
-    this.Errors=[]
-    if(this.userName.length<5)
-      this.Errors.push("UserName should be more than 4 char");
-    if (this.userPwd.length<9)
-      this.Errors.push("Password should be more than 8 char");
-    return true
   }
 }

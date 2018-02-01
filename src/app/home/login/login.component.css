@@ -11,6 +11,11 @@
   border: 3px dotted rgba(0,0,0,0.1);
 }
 
+.form-signin span{
+  font-size: 15px;
+  color:red;
+}
+
 .form-signin a{
   text-align: center;
 }

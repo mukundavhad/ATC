@@ -12,7 +12,7 @@ import { HeaderComponent } from 'app/admin-page/header/header.component';
 export const appRoutes: Routes = [
     { path: 'Login', component: LoginComponent},
     { path: 'Home',      component: HomeComponent },
-    { path: 'Dashboard',      component: DashboardComponent },
+    { path: 'Dashboard',      component:DashboardComponent },
     { path: 'ServManage',      component: ServManageComponent },
     { path: 'VendManage',      component: VendManageComponent },
     { path:'emp-grid',component:EmpGridComponent},
