@@ -28,6 +28,12 @@ import { VedGridComponent } from './admin-page/ved-grid/ved-grid.component';
 import { HeaderComponent } from './admin-page/header/header.component';
 import { EmpHeaderComponent } from './emp-page/emp-header/emp-header.component';
 import { AdminPageComponent } from 'app/admin-page/admin-page.component';
+import { ServGridComponent } from './emp-page/serv-grid/serv-grid.component';
+import { VendGridComponent } from './emp-page/vend-grid/vend-grid.component';
+import { TowerGridComponent } from './emp-page/tower-grid/tower-grid.component';
+import { MtrlGridComponent } from './emp-page/mtrl-grid/mtrl-grid.component';
+import { MngMtrlComponent } from './emp-page/mng-mtrl/mng-mtrl.component';
+import { TwrMngComponent } from './emp-page/twr-mng/twr-mng.component';
 
 
 @NgModule({
@@ -51,7 +57,7 @@ import { AdminPageComponent } from 'app/admin-page/admin-page.component';
     HeaderComponent,
     GridsystemComponent,
     EmpHeaderComponent, 
-    AdminPageComponent   
+    AdminPageComponent, ServGridComponent, VendGridComponent, TowerGridComponent, MtrlGridComponent, MngMtrlComponent, TwrMngComponent   
     
   ],
   imports: [

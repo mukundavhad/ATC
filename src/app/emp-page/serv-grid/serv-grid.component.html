@@ -1,0 +1,15 @@
+<div class="col-sm-4 grid">
+    <button class="btn btn-primary" (click)="lgModal.show()">Add Service</button>
+    <ag-grid-angular style="height: 200px; width: 975px;" class="ag-theme-fresh" [rowData]="ctlrowData" [columnDefs]="ctlcolumnDefs"
+            [gridOptions]="gridOptions"
+            enableColResize
+            enableSorting
+            enableFilter
+            suppressRowClickSelection
+            toolPanelSuppressGroups
+            toolPanelSuppressValues
+            rowHeight="30"
+            rowSelection="multiple"
+            (gridReady)="onReady($event)">
+    </ag-grid-angular>
+</div>

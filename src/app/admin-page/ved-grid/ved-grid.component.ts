@@ -29,8 +29,8 @@ export class VedGridComponent implements OnInit {
       {headerName: "Mobile_No", field: "Mobile_No", width: 150} ,
       {headerName: "Email", field: "Email", width: 150},
       {headerName: "Location", field: "Location", width: 150},
-      {headerName: "Start_Date", field: "Start_Date", width: 250},
-      {headerName: "End_Date", field: "End_Date", width: 250},           
+      {headerName: "Start_Date", field: "Start_Date", width: 150},
+      {headerName: "End_Date", field: "End_Date", width: 150},           
               
               
   ];

@@ -9,6 +9,8 @@ import { UserRegComponent } from 'app/admin-page/user-reg/user-reg.component';
 import { EmpGridComponent } from 'app/admin-page/emp-grid/emp-grid.component';
 import { HeaderComponent } from 'app/admin-page/header/header.component';
 import { AdminPageComponent } from 'app/admin-page/admin-page.component';
+import { MngMtrlComponent } from 'app/emp-page/mng-mtrl/mng-mtrl.component';
+import { TwrMngComponent } from 'app/emp-page/twr-mng/twr-mng.component';
 
 export const appRoutes: Routes = [
     { path: 'Login', component: LoginComponent},
@@ -19,7 +21,6 @@ export const appRoutes: Routes = [
     { path:'emp-grid',component:EmpGridComponent},
     { path:'header',component:HeaderComponent},
     { path: 'AdminPage',      component: AdminPageComponent },
-
-    { path: '',      component: LoginComponent },
-
+    { path: 'MngMtrl',      component: MngMtrlComponent },
+    { path: 'TwrMng',      component: TwrMngComponent },
 ];

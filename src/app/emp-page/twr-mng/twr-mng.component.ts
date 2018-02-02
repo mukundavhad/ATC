@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from 'app/home/authentication.service';
 
 @Component({
-  selector: 'app-vend-manage',
+  selector: 'app-twr-mng',
   providers: [AuthenticationService],
-  templateUrl: './vend-manage.component.html',
-  styleUrls: ['./vend-manage.component.css']
+  templateUrl: './twr-mng.component.html',
+  styleUrls: ['./twr-mng.component.css']
 })
-export class VendManageComponent implements OnInit {
+export class TwrMngComponent implements OnInit {
 
   constructor() { }
 
