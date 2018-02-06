@@ -11,6 +11,7 @@ import { HeaderComponent } from 'app/admin-page/header/header.component';
 import { AdminPageComponent } from 'app/admin-page/admin-page.component';
 import { MngMtrlComponent } from 'app/emp-page/mng-mtrl/mng-mtrl.component';
 import { TwrMngComponent } from 'app/emp-page/twr-mng/twr-mng.component';
+import { GridsystemComponent } from 'app/emp-page/initiatePO/gridsystem.component';
 
 export const appRoutes: Routes = [
     { path: 'Login', component: LoginComponent },
@@ -23,5 +24,6 @@ export const appRoutes: Routes = [
     { path: 'AdminPage', component: AdminPageComponent },
     { path: 'MngMtrl', component: MngMtrlComponent },
     { path: 'TwrMng', component: TwrMngComponent },
+    { path: 'Grid', component: GridsystemComponent }, 
     { path: '', component: HomeComponent },
 ];

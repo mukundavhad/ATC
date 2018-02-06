@@ -12,6 +12,8 @@ import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 export class AdminMenuComponent {
   visible1: boolean;
   visible: boolean;
+  public companies: any[];
+  
 
   log(event: boolean) {
     console.log(`Accordion has been ${event ? 'opened' : 'closed'}`);
@@ -24,10 +26,22 @@ export class AdminMenuComponent {
 
   }
 
+  ngOnInit() {
+    this.companies = [
+      {
+      company: "American Tower Corporation"
+      },
+      {
+      company: "BT Tower"
+      }
+    ]
+  }
+
   viewDetail(){
-    this.visible=!this.visible;
+    this.visible=!this.visible
 }
-   VviewDetail(){
-    this.visible1=!this.visible1;
+  VviewDetail(){
+     this.visible1=!this.visible1
     }
+    
 }

@@ -1,27 +1,15 @@
 <br />
 <div class="container col-md-4">
-  <accordion>
-    <accordion-group heading="American Tower Corporation">
-      <a style="color:Tomato" (click)="viewDetail()"><b>  Employee  </b></a><b>|</b>
-      <a (click)="VviewDetail()"><b>  Vendor  </b></a>
-      <br />
-    </accordion-group>
-  </accordion>
-  
-  <accordion>
-    <accordion-group heading="BT Corporation">
-      <a style="color:Tomato"(click)="viewDetail()"><b>  Employee  </b></a><b>|</b>
-      <a (click)="VviewDetail()"><b>  Vendor  </b></a>
-      <br />
-    </accordion-group>
-  </accordion>
+    <app-accord *ngFor="let company of companies" [companyModel]="company" (click)="viewDetail()"></app-accord>
 </div>
 
-<div class="col-sm-6" *ngIf="visible">
-  <app-emp-grid></app-emp-grid>
-</div>
-
-<div class="col-sm-6" *ngIf="visible1">
-    <app-ved-grid></app-ved-grid>
+<div class="col-sm-6" *ngIf="visible; else elseBlock">
+    <app-emp-grid></app-emp-grid>
   </div>
   
+  <ng-template #elseBlock>
+    <div class="col-sm-6">
+      <app-ved-grid></app-ved-grid>
+    </div>
+  
+  </ng-template>

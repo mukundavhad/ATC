@@ -22,7 +22,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { AgGridModule } from 'ag-grid-angular';
 import { AdminMenuComponent } from 'app/admin-page/admin-menu/admin-menu.component';
 import { UserRegComponent } from 'app/admin-page/user-reg/user-reg.component';
-import { GridsystemComponent } from './emp-page/gridsystem/gridsystem.component';
+import { GridsystemComponent } from './emp-page/initiatePO/gridsystem.component';
 import { EmpGridComponent } from './admin-page/emp-grid/emp-grid.component';
 import { VedGridComponent } from './admin-page/ved-grid/ved-grid.component';
 import { HeaderComponent } from './admin-page/header/header.component';
@@ -34,6 +34,7 @@ import { TowerGridComponent } from './emp-page/tower-grid/tower-grid.component';
 import { MtrlGridComponent } from './emp-page/mtrl-grid/mtrl-grid.component';
 import { MngMtrlComponent } from './emp-page/mng-mtrl/mng-mtrl.component';
 import { TwrMngComponent } from './emp-page/twr-mng/twr-mng.component';
+import { AccordComponent } from './admin-page/admin-menu/accord/accord.component';
 
 
 @NgModule({
@@ -57,7 +58,7 @@ import { TwrMngComponent } from './emp-page/twr-mng/twr-mng.component';
     HeaderComponent,
     GridsystemComponent,
     EmpHeaderComponent, 
-    AdminPageComponent, ServGridComponent, VendGridComponent, TowerGridComponent, MtrlGridComponent, MngMtrlComponent, TwrMngComponent   
+    AdminPageComponent, ServGridComponent, VendGridComponent, TowerGridComponent, MtrlGridComponent, MngMtrlComponent, TwrMngComponent, AccordComponent   
     
   ],
   imports: [

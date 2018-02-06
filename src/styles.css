@@ -1,44 +1,8 @@
-.wrapper {
-  margin-left: 750px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-input[type="text"] {
-  margin-bottom: 5px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-input[type="password"] {
-  margin-bottom: 5px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-input[type="number"] {
-  margin-bottom: 20px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-
-.colorgraph {
-  height: 7px;
-  border-top: 0;
-  background: #c4e17f;
-  border-radius: 5px;
-  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-}
-
 body {
   font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background: url('assets/ats.jpg');
+  background: url('assets/ats1.jpg');
   background-repeat: no-repeat;
-  background-size: 1380px 670px;
+
 }
 
 .brand-heading {
@@ -145,10 +109,6 @@ body {
     transition: 0.3s;
   }
 
-    .sidenav a:hover {
-      color: #f1f1f1;
-    }
-
   .sidenav .closebtn {
     color: white;
     position: absolute;
@@ -180,6 +140,4 @@ body {
 }
 .ag-row{
   border:1px solid; background-color:white; color:#A1A6AB; text-align: left;
-
 }
-

@@ -8,8 +8,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class ActionBoxComponent implements OnInit {
   visible: boolean;
 
-  @Input()
-  public actionModel: any = {};
+    @Input()
+    public actionModel: any = {};
 
   @Output() OnViewDetail = new EventEmitter<string>();;
 

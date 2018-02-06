@@ -1,13 +1,11 @@
 <div class="col-md-9 center">
-  <h2>Employee Details</h2>
+  <h2>Employee_Details</h2>
   <button class="btn btn-primary" (click)="lgModal.show()">Add Employee</button>
   <br />
   <br />
-  <ag-grid-angular style="width: 800px; height: 300px;margin-right:250px;" class="ag-theme-fresh" [rowData]="rowData" [columnDefs]="columnDefs">
+  <ag-grid-angular class="ag-theme-fresh emp-grid" [rowData]="rowData" [columnDefs]="columnDefs">
   </ag-grid-angular>
 </div>
-
-
 
 <div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">

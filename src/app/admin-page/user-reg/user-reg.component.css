@@ -1,15 +1,16 @@
 .form {
     text-align: center;
 	font-family: 'Raleway', sans-serif;
-    background-size: cover;
-    background-color: rgba(43, 2, 2, 0.62);
+    background-size: 10%;
+    background-color: #337ab7;
+
 }
 .center-container {
     padding: 0;
     background: rgba(0, 0, 0, 0.62);
 }
 .header-w3l {
-    padding: 3em 0;
+    padding: 2em 0;
 }
 .header-w3l h1{
 	font-size:3em;
@@ -22,7 +23,6 @@
 }
 .main-content-agile {
     margin: 0 auto;
-    margin-left: 35%;
     width: 32%;
 }
 .wthree-pro {
@@ -42,7 +42,6 @@
 }
 .sub-main-w3{
 	position:relative;
-	padding: 2em 0 1em;
 }
 .sub-main-w3 input[type="text"],.sub-main-w3 input[type="email"],.sub-main-w3 input[type="tel"], .sub-main-w3 input[type="password"] {
     outline: none;
@@ -62,20 +61,19 @@
 }
 .sub-main-w3 input[type="submit"] {
     color: #fff;
-    background: #db3552;
-    border: none;
+    background: #2CC990;
+    border: solid;
     padding: .7em 4em;
-    outline: none;
     font-size: 1.1em;
     cursor: pointer;
     letter-spacing: 1px;
-	margin-top: 0.5em;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -o-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -ms-transition: 0.5s all;
-	font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 20px;
 }
 .sub-main-w3 input[type="submit"]:hover {
     background: #2CC990;

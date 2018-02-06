@@ -4,7 +4,6 @@
   <div class="row">
     <div class="col-md-6">
       <form action="" method="post" name="Login_Form" class="form-signin">
-        <hr class="colorgraph">
         <br>
 
         <input [(ngModel)]="user.email" id="email" type="email" class="form-control validate" name="Username" placeholder="Username"
@@ -15,15 +14,17 @@
         <br />
         <span class="ErrorMessage">{{errorMsg}}</span>
         <br />
-        <br />
+        
         <button (click)="login()" class="btn btn-lg btn-primary btn-block" name="action" value="Login" type="Submit">Login</button>
         <br />
-        <br>
+      
         <a href="#">
           <h4>
             <b> Forgot Password ? </b>
           </h4>
         </a>
+        <hr class="colorgraph">
+        
       </form>
     </div>
   </div>

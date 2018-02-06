@@ -3,7 +3,6 @@ import { AuthenticationService } from 'app/home/authentication.service';
 
 @Component({
   selector: 'app-dashboard',
-  
   providers: [AuthenticationService],
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
