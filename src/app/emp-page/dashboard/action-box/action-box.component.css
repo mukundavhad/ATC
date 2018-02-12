@@ -1,6 +1,17 @@
-.panel-footer{
-    cursor: pointer;
+.details{
+    text-align: right;
+}
+.text-right a{
+    color: white;
+}
+.text-right h5{
+    font-weight: bold;
+    font-size: 15px;
 }
 .active{
-    
+    background-color: rgb(44, 42, 42);
+    font-weight: bold;
+}
+.panel{
+    cursor: pointer;
 }

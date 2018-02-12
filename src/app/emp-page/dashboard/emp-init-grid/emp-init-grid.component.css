@@ -1,0 +1,39 @@
+.grid {
+    margin-top: 70px;
+}
+.ag-header-cell-sorted-asc {
+    color: white;    
+}
+.ag-header-cell span{
+    color: white;
+}
+.add{
+    font-weight: bold;
+    float: right;
+    margin-right: 15px;
+    color: white;
+    font-size: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.glyph{
+    color: white;
+    margin-left: 80px;
+    font-size: 30px;
+    float: left;
+}
+.modal-dialog {
+    width: 60%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: scroll;
+    outline: 0;
+}
+.modal-title{
+    margin-top: 5px;
+
+}

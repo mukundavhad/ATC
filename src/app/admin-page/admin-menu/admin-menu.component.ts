@@ -38,10 +38,11 @@ export class AdminMenuComponent {
   }
 
   viewDetail(){
-    this.visible=!this.visible
+    this.visible=true;
+    this.visible1=false;
 }
   VviewDetail(){
-     this.visible1=!this.visible1
-    }
+    this.visible=false;
+    this.visible1=true; }
     
 }

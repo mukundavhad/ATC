@@ -11,7 +11,12 @@ import { HeaderComponent } from 'app/admin-page/header/header.component';
 import { AdminPageComponent } from 'app/admin-page/admin-page.component';
 import { MngMtrlComponent } from 'app/emp-page/mng-mtrl/mng-mtrl.component';
 import { TwrMngComponent } from 'app/emp-page/twr-mng/twr-mng.component';
-import { GridsystemComponent } from 'app/emp-page/initiatePO/gridsystem.component';
+import { EmpInitGridComponent } from 'app/emp-page/dashboard/emp-init-grid/emp-init-grid.component';
+import { EmpMtrlGridComponent } from 'app/emp-page/dashboard/emp-mtrl-grid/emp-mtrl-grid.component';
+import { EmpFinalGridComponent } from 'app/emp-page/dashboard/emp-final-grid/emp-final-grid.component';
+import { EmpCmpltGridComponent } from 'app/emp-page/dashboard/emp-cmplt-grid/emp-cmplt-grid.component';
+import { CompanyListComponent } from 'app/admin-page/admin-menu/company-list/company-list.component';
+import { VedGridComponent } from 'app/admin-page/ved-grid/ved-grid.component';
 
 export const appRoutes: Routes = [
     { path: 'Login', component: LoginComponent },
@@ -20,10 +25,15 @@ export const appRoutes: Routes = [
     { path: 'ServManage', component: ServManageComponent },
     { path: 'VendManage', component: VendManageComponent },
     { path: 'emp-grid', component: EmpGridComponent },
+    { path: 'ved-grid', component: VedGridComponent},
     { path: 'header', component: HeaderComponent },
     { path: 'AdminPage', component: AdminPageComponent },
     { path: 'MngMtrl', component: MngMtrlComponent },
     { path: 'TwrMng', component: TwrMngComponent },
-    { path: 'Grid', component: GridsystemComponent }, 
+    { path: 'InitGrid', component: EmpInitGridComponent },
+    { path: 'MtrlGrid', component: EmpMtrlGridComponent },
+    { path: 'FinalGrid', component: EmpFinalGridComponent },
+    { path: 'CmpltGrid', component: EmpCmpltGridComponent }, 
+    { path: 'CompanyList', component: CompanyListComponent }, 
     { path: '', component: HomeComponent },
 ];

@@ -1,0 +1,5 @@
+<app-vend-header></app-vend-header>
+<div class="col-md-9">
+  <app-action-box *ngFor="let actionbox of actionDetail" [actionModel]="actionbox" (OnViewDetail)="LoadGridData($event)">
+  </app-action-box>
+</div>

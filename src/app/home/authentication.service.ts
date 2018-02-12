@@ -16,6 +16,10 @@ var users1 = [
   new User('admin','admin')
 ];
 
+var users2 = [
+  new User('vendor','vendor')
+];
+
 @Injectable()
 export class AuthenticationService {
 
@@ -29,6 +33,8 @@ export class AuthenticationService {
   login(user){
     var authenticatedUser = users.find(u => u.email === user.email);
     var authenticatedUser1 = users1.find(u => u.email === user.email);
+    var authenticatedUser2 = users2.find(u => u.email === user.email);
+    
     
     if (authenticatedUser && authenticatedUser.password === user.password){
       localStorage.setItem("users",  JSON.stringify(authenticatedUser));
@@ -41,7 +47,7 @@ export class AuthenticationService {
       return true;
     }
     return false;
- 
+
   }
  
    checkCredentials(){

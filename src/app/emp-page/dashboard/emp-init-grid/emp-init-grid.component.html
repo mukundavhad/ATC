@@ -1,5 +1,5 @@
 <app-dashboard></app-dashboard>
-<div class="add" (click)="lgModal.show()">Add New P.O &nbsp;|&nbsp; Edit P.O</div>
+<div class="add" (click)="lgModal.show()">Add New P.O &nbsp;|&nbsp; Upload P.O</div>
 <div class="col-sm-4 grid">
     <ag-grid-angular style="height: 250px; width: 1000px;" class="ag-theme-fresh" [rowData]="ctlrowData" [columnDefs]="ctlcolumnDefs"
             [gridOptions]="gridOptions"
@@ -24,7 +24,7 @@
               </button>
             </div>
             <div class="modal-body">
-              <app-user-reg></app-user-reg>
+              <app-emp-init-form></app-emp-init-form>
             </div>
           </div>
         </div>

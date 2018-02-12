@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GridsystemComponent } from './gridsystem.component';
+import { EmpCmpltFormComponent } from './emp-cmplt-form.component';
 
-describe('GridsystemComponent', () => {
-  let component: GridsystemComponent;
-  let fixture: ComponentFixture<GridsystemComponent>;
+describe('EmpCmpltFormComponent', () => {
+  let component: EmpCmpltFormComponent;
+  let fixture: ComponentFixture<EmpCmpltFormComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GridsystemComponent ]
+      declarations: [ EmpCmpltFormComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GridsystemComponent);
+    fixture = TestBed.createComponent(EmpCmpltFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

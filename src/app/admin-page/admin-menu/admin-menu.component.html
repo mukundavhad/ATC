@@ -1,15 +1,20 @@
+<app-header></app-header>
 <br />
-<div class="container col-md-4">
-    <app-accord *ngFor="let company of companies" [companyModel]="company" (click)="viewDetail()"></app-accord>
+<div class="container col-sm-4">
+    <a routerLink="/emp-grid"><b>  Employee  </b></a><b>|</b>
+      <a routerLink="/ved-grid"><b>  Vendor  </b></a>
+  <accordion>
+    <accordion-group heading="American Tower Corporation">
+        American Tower Corporation is a publicly held company, owner and operator of wireless and broadcast communications infrastructure in several countries. American Tower is headquartered in Boston, Massachusetts and has local offices worldwide.
+      <br />
+    </accordion-group>
+  </accordion>
+  <a (click)="viewDetail()"><b>  Employee  </b></a><b>|</b>
+  <a (click)="VviewDetail()"><b>  Vendor  </b></a>
+  <accordion>
+    <accordion-group heading="BT Corporation">
+        BT Group plc (trading as BT and formerly British Telecom) is a holding company which owns British Telecommunications plc, a British multinational telecommunications company with head offices in London, United Kingdom. It has operations in around 180 countries and is the largest provider of fixed-line, mobile and broadband services in the UK, and also provides subscription television and IT services.
+      <br />
+    </accordion-group>
+  </accordion>
 </div>
-
-<div class="col-sm-6" *ngIf="visible; else elseBlock">
-    <app-emp-grid></app-emp-grid>
-  </div>
-  
-  <ng-template #elseBlock>
-    <div class="col-sm-6">
-      <app-ved-grid></app-ved-grid>
-    </div>
-  
-  </ng-template>

@@ -22,7 +22,6 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { AgGridModule } from 'ag-grid-angular';
 import { AdminMenuComponent } from 'app/admin-page/admin-menu/admin-menu.component';
 import { UserRegComponent } from 'app/admin-page/user-reg/user-reg.component';
-import { GridsystemComponent } from './emp-page/initiatePO/gridsystem.component';
 import { EmpGridComponent } from './admin-page/emp-grid/emp-grid.component';
 import { VedGridComponent } from './admin-page/ved-grid/ved-grid.component';
 import { HeaderComponent } from './admin-page/header/header.component';
@@ -35,11 +34,27 @@ import { MtrlGridComponent } from './emp-page/mtrl-grid/mtrl-grid.component';
 import { MngMtrlComponent } from './emp-page/mng-mtrl/mng-mtrl.component';
 import { TwrMngComponent } from './emp-page/twr-mng/twr-mng.component';
 import { AccordComponent } from './admin-page/admin-menu/accord/accord.component';
+import { EmpInitGridComponent } from './emp-page/dashboard/emp-init-grid/emp-init-grid.component';
+import { EmpMtrlGridComponent } from './emp-page/dashboard/emp-mtrl-grid/emp-mtrl-grid.component';
+import { EmpFinalGridComponent } from './emp-page/dashboard/emp-final-grid/emp-final-grid.component';
+import { EmpCmpltGridComponent } from './emp-page/dashboard/emp-cmplt-grid/emp-cmplt-grid.component';
+import { EmpInitFormComponent } from './emp-page/dashboard/emp-init-form/emp-init-form.component';
+import { EmpMtrlFormComponent } from './emp-page/dashboard/emp-mtrl-form/emp-mtrl-form.component';
+import { EmpFinalFormComponent } from './emp-page/dashboard/emp-final-form/emp-final-form.component';
+import { EmpCmpltFormComponent } from './emp-page/dashboard/emp-cmplt-form/emp-cmplt-form.component';
+import { CompanyListComponent } from './admin-page/admin-menu/company-list/company-list.component';
+import { MtrlFormComponent } from './emp-page/mng-mtrl/mtrl-form/mtrl-form.component';
+import { TwrFormComponent } from './emp-page/twr-mng/twr-form/twr-form.component';
+import { ServFormComponent } from './emp-page/serv-manage/serv-form/serv-form.component';
+import { VendorPageComponent } from 'app/vendor-page/vendor-page.component';
+import { VendDashboardComponent } from './vendor-page/vend-dashboard/vend-dashboard.component';
+import { VendHeaderComponent } from './vendor-page/vend-header/vend-header.component';
 
 
 @NgModule({
 
   declarations: [
+    VendorPageComponent,
     AppComponent,
     LoginComponent,
     HomeComponent,
@@ -56,9 +71,23 @@ import { AccordComponent } from './admin-page/admin-menu/accord/accord.component
     EmpGridComponent,
     VedGridComponent,
     HeaderComponent,
-    GridsystemComponent,
     EmpHeaderComponent, 
-    AdminPageComponent, ServGridComponent, VendGridComponent, TowerGridComponent, MtrlGridComponent, MngMtrlComponent, TwrMngComponent, AccordComponent   
+    AdminPageComponent, 
+    ServGridComponent, 
+    VendGridComponent, 
+    TowerGridComponent, 
+    MtrlGridComponent, 
+    MngMtrlComponent, 
+    TwrMngComponent, 
+    AccordComponent, 
+    EmpInitGridComponent, 
+    EmpMtrlGridComponent, 
+    EmpFinalGridComponent, 
+    EmpCmpltGridComponent, 
+    EmpInitFormComponent, 
+    EmpMtrlFormComponent, 
+    EmpFinalFormComponent, 
+    EmpCmpltFormComponent, CompanyListComponent, MtrlFormComponent, TwrFormComponent, ServFormComponent, VendDashboardComponent, VendHeaderComponent   
     
   ],
   imports: [

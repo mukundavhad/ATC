@@ -1,11 +1,14 @@
-<div class="col-md-9 center">
-  <h2>Vendor_Details </h2>
-  <button class="btn btn-danger" (click)="lgModal.show()">Add vendor</button>
-  <br />
-  <br />
-  <ag-grid-angular style="width: 800px; height: 300px;margin-right:250px;" class="ag-theme-fresh" [rowData]="rowData" [columnDefs]="columnDefs">
-  </ag-grid-angular>
+<app-admin-menu></app-admin-menu>
+<div class="col-sm-4">
+<h2>Vendors </h2>
+<div class="text">
+<a (click)="lgModal.show()">Add Vendor</a>
 </div>
+<br />
+<br />
+<ag-grid-angular style="width: 800px; height: 300px;margin-right:250px;" class="ag-theme-fresh" [rowData]="rowData" [columnDefs]="columnDefs">
+</ag-grid-angular>
+
 
 
 
@@ -13,7 +16,7 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title pull-left">American tower Corporation</h4>
+        <h4 class="modal-title pull-left">British Tower Corporation</h4>
         <button type="button" class="close pull-right" (click)="lgModal.hide()" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -23,4 +26,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>

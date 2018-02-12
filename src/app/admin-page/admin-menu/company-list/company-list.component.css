@@ -1,0 +1,17 @@
+.list a{
+    margin-top: 5px;
+    color: white;
+    font-size: 18px;
+  }
+.menu{
+    font-size: 10px;
+    color: white;
+    margin-top: 14px;
+  }
+  .active{
+    background-color: #337ab7;
+  }
+
+  .list a:hover {
+    background-color: #337ab7;
+  }

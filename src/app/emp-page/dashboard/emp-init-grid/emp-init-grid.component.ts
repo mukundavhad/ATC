@@ -1,14 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { GridApi, ColumnApi } from 'ag-grid';
-import { AuthenticationService } from 'app/home/authentication.service';
 
 @Component({
-  selector: 'app-gridsystem',
-  providers: [AuthenticationService],
-  templateUrl: './gridsystem.component.html',
-  styleUrls: ['./gridsystem.component.css']
+  selector: 'app-emp-init-grid',
+  templateUrl: './emp-init-grid.component.html',
+  styleUrls: ['./emp-init-grid.component.css']
 })
-export class GridsystemComponent implements OnInit {
+export class EmpInitGridComponent implements OnInit {
 
   public ctlrowData: any[];
   public ctlcolumnDefs: any[];

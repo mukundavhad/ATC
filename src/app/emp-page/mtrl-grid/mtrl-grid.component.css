@@ -1,0 +1,12 @@
+.add{
+    font-weight: bold;
+    text-align: right;
+    margin-right: -3px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-decoration: underline white;
+    padding-top: -20px;
+}

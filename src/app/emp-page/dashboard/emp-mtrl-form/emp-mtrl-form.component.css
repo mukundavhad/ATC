@@ -1,0 +1,33 @@
+.invoice-title h2, .invoice-title h3 {
+    display: inline-block;
+    color: black;
+}
+
+.table > tbody > tr > .no-line {
+    border-top: none;
+}
+.table > thead > tr{
+    margin-left: 0px;
+}
+
+
+.table > thead > tr > .no-line {
+    border-top: 2px solid;
+}
+
+.table > tbody > tr > .thick-line {
+    border-top: 2px solid;
+}
+.finalize{
+    float: right;
+    
+}
+.panel-heading{
+    padding-top: 10px;
+}
+.panel{
+    width: 110%;
+}
+.container{
+    width: 70%;
+}

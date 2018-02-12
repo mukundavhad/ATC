@@ -2,7 +2,7 @@
     margin-top: 70px;
 }
 .ag-header-cell-sorted-asc {
-    color: white;
+    color: white;    
 }
 .ag-header-cell span{
     color: white;
@@ -21,4 +21,10 @@
     margin-left: 80px;
     font-size: 30px;
     float: left;
+}
+.modal-body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
 }
