@@ -8,8 +8,7 @@ export class User {
 }
  
 var users = [
-  new User('employee','employee'),
-  new User('sachin','sachin')
+  new User('employee','employee')
 ];
 
 var users1 = [
@@ -44,6 +43,11 @@ export class AuthenticationService {
     if (authenticatedUser1 && authenticatedUser1.password === user.password){
       localStorage.setItem("users",  JSON.stringify(authenticatedUser1));
       this.router.navigate(['AdminPage']);      
+      return true;
+    }
+    if (authenticatedUser2 && authenticatedUser2.password === user.password){
+      localStorage.setItem("users",  JSON.stringify(authenticatedUser2));
+      this.router.navigate(['VendDashbrd']);      
       return true;
     }
     return false;

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VendMenuComponent } from './vend-menu.component';
+import { VendCmpltGridComponent } from './vend-cmplt-grid.component';
 
-describe('VendMenuComponent', () => {
-  let component: VendMenuComponent;
-  let fixture: ComponentFixture<VendMenuComponent>;
+describe('VendCmpltGridComponent', () => {
+  let component: VendCmpltGridComponent;
+  let fixture: ComponentFixture<VendCmpltGridComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ VendMenuComponent ]
+      declarations: [ VendCmpltGridComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(VendMenuComponent);
+    fixture = TestBed.createComponent(VendCmpltGridComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

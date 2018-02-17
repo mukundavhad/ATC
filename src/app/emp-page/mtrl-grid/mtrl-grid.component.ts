@@ -27,7 +27,7 @@ export class MtrlGridComponent implements OnInit {
       { headerName: "Material Name", field: "material_name", width: 150,filter: 'text'},
       { headerName: "Material ID", field: "material_id", width: 150,},
       { headerName: "Parent ID", field: "parent_id", width: 150,  },
-      { headerName: "Description", field: "description", width: 300 ,filter: 'text'},
+      { headerName: "Description", field: "description", width: 250 ,filter: 'text'},
       { headerName: "Cost", field: "cost", width: 150 },
       { headerName: "Quantity", field: "quantity", width: 150 },
       { headerName: "Valid From", field: "valid_from", width: 150},

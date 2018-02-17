@@ -17,6 +17,11 @@ import { EmpFinalGridComponent } from 'app/emp-page/dashboard/emp-final-grid/emp
 import { EmpCmpltGridComponent } from 'app/emp-page/dashboard/emp-cmplt-grid/emp-cmplt-grid.component';
 import { CompanyListComponent } from 'app/admin-page/admin-menu/company-list/company-list.component';
 import { VedGridComponent } from 'app/admin-page/ved-grid/ved-grid.component';
+import { VendDashboardComponent } from 'app/vendor-page/vend-dashboard/vend-dashboard.component';
+import { VendInitGridComponent } from 'app/vendor-page/vend-dashboard/vend-init-grid/vend-init-grid.component';
+import { VendMtrlGridComponent } from 'app/vendor-page/vend-dashboard/vend-mtrl-grid/vend-mtrl-grid.component';
+import { VendFinalGridComponent } from 'app/vendor-page/vend-dashboard/vend-final-grid/vend-final-grid.component';
+import { VendCmpltGridComponent } from 'app/vendor-page/vend-dashboard/vend-cmplt-grid/vend-cmplt-grid.component';
 
 export const appRoutes: Routes = [
     { path: 'Login', component: LoginComponent },
@@ -35,5 +40,11 @@ export const appRoutes: Routes = [
     { path: 'FinalGrid', component: EmpFinalGridComponent },
     { path: 'CmpltGrid', component: EmpCmpltGridComponent }, 
     { path: 'CompanyList', component: CompanyListComponent }, 
-    { path: '', component: HomeComponent },
+    { path: 'VendDashbrd', component: VendDashboardComponent },
+    { path: 'VendInitGrid', component: VendInitGridComponent },
+    { path: 'VendMtrlGrid', component: VendMtrlGridComponent },
+    { path: 'VendFinalGrid', component: VendFinalGridComponent },
+    { path: 'VendCmpltGrid', component: VendCmpltGridComponent },
+    
+    
 ];

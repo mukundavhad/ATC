@@ -24,10 +24,12 @@ export class TowerGridComponent implements OnInit {
   ngOnInit() {
 
     this.ctlcolumnDefs = [
-      { headerName: "Tower ID", field: "tower_id", width: 250,filter: 'text'},
-      { headerName: "Tower Name", field: "tower_name", width: 250,},
-      { headerName: "Location", field: "location", width: 250 ,filter: 'text'},
-      { headerName: "Build Date", field: "build_date", width: 250 },
+      { headerName: "Tower ID", field: "tower_id", width: 200,filter: 'text'},
+      { headerName: "Tower Name", field: "tower_name", width: 200,filter: 'text'},
+      { headerName: "State", field: "state", width: 200 ,filter: 'text'},
+      { headerName: "City", field: "city", width: 200,filter: 'text' },
+      { headerName: "Location", field: "location", width: 200 ,filter: 'text'},
+      
       
     ];
 

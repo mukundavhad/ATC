@@ -1,5 +1,6 @@
-<app-dashboard></app-dashboard>
-<div class="add"><a (click)="lgModal.show()">Add New P.O </a>&nbsp;|&nbsp; <a>Upload P.O</a></div>
+<app-vend-dashboard></app-vend-dashboard>
+<br/>
+<div class="add" (click)="lgModal.show()">View P.O</div>
 <div class="col-sm-4 grid">
     <ag-grid-angular style="height: 250px; width: 1000px;" class="ag-theme-fresh" [rowData]="ctlrowData" [columnDefs]="ctlcolumnDefs"
             [gridOptions]="gridOptions"
@@ -15,16 +16,16 @@
     </ag-grid-angular>
 </div>
 <div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close pull-right" (click)="lgModal.hide()" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <app-emp-init-form></app-emp-init-form>
-            </div>
-          </div>
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title pull-left">P.O Details</h4>
+          <button type="button" class="close pull-right" (click)="lgModal.hide()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
         </div>
       </div>
+    </div>
+  </div>

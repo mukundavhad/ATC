@@ -16,27 +16,15 @@
     margin-top: 40px;
     cursor: pointer;
 }
-.add a{
-    color: white;
-}
 .glyph{
     color: white;
     margin-left: 80px;
     font-size: 30px;
     float: left;
 }
-.modal-dialog {
-    width: 60%;
+.modal-body {
+    position: relative;
+    width: 100%;
     height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: scroll;
-    outline: 0;
-}
-.modal-title{
-    margin-top: 5px;
-
+    overflow: auto; /* Enable scroll if needed */
 }

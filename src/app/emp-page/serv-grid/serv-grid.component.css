@@ -1,11 +1,9 @@
 .add{
     font-weight: bold;
     text-align: right;
-    margin-right: 20px;
     margin-bottom: 5px;
     color:white;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 5px;
-    cursor: pointer;
-    text-decoration: underline white;
+    cursor: pointer;    
 }

@@ -1,27 +1,28 @@
 <app-admin-menu></app-admin-menu>
 <div class="col-sm-8">
-<h2>Employees</h2>
-<div class="text">
-<a (click)="lgModal.show()">Add Employee</a>
-</div>
-<br />
-<br />
-<ag-grid-angular class="ag-theme-fresh emp-grid" [rowData]="rowData" [columnDefs]="columnDefs">
-</ag-grid-angular>
+  <h2>
+    <span class="glyphicon glyphicon-user"></span> Employees</h2>
+  <div class="text">
+    <a (click)="lgModal.show()"><span class="glyphicon glyphicon-plus"></span> Add Employee</a>
+  </div>
+  <br />
+  <br />
+  <ag-grid-angular class="ag-theme-fresh emp-grid" [rowData]="rowData" [columnDefs]="columnDefs">
+  </ag-grid-angular>
 
-<div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title pull-left">American Tower Corporation</h4>
-        <button type="button" class="close pull-right" (click)="lgModal.hide()" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <app-user-reg></app-user-reg>
+  <div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title pull-left">American Tower Corporation</h4>
+          <button type="button" class="close pull-right" (click)="lgModal.hide()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <app-user-reg></app-user-reg>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </div>

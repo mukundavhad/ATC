@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="col-lg-3 col-md-6">
+  <div class="panel panel-primary">
+    <div class="panel-heading" routerLinkActive="active">
+      <div class="row">
+        <div class="col-xs-12 text-right">
+          <div>
+            <h5>{{title}} ({{count}})</h5>
+          </div>
+          <span class="pull-right">&nbsp;&nbsp;
+            <span class="pull-right">
+              <i class="fa fa-arrow-circle-right"></i>
+            </span>
+          </span>
+          <a routerLink="/VendInitGrid" *ngIf="title=='Initiated'" routerLinkActive="active">View Details</a>
+          <a routerLink="/VendMtrlGrid" *ngIf="title=='Materialized'" routerLinkActive="active">View Details</a>
+          <a routerLink="/VendFinalGrid" *ngIf="title=='Finalized'" routerLinkActive="active">View Details</a>
+          <a routerLink="/VendCmpltGrid" *ngIf="title=='Completed'" routerLinkActive="active">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -26,17 +26,14 @@ export class ServGridComponent implements OnInit {
     this.ctlcolumnDefs = [
       { headerName: "Service Name", field: "service_name", width: 150,filter: 'text'},
       { headerName: "Service ID", field: "service_id", width: 150,},
-      { headerName: "Parent ID", field: "parent_id", width: 150,  },
       { headerName: "Description", field: "description", width: 300 ,filter: 'text'},
-      { headerName: "Cost", field: "cost", width: 150 },
-      { headerName: "Valid From", field: "valid_from", width: 150},
-      { headerName: "Valid Through", field: "valid_through", width: 150 },
+      { headerName: "Unit Rate", field: "unit_rate", width: 150 },
+      { headerName: "Active", field: "active", width: 150},
+      { headerName: "InActive", field: "inactive", width: 150 },
     ];
 
     this.ctlrowData = [    
     ];
-
- 
 
   }
 

@@ -24,13 +24,11 @@ export class VendGridComponent implements OnInit {
   ngOnInit() {
 
     this.ctlcolumnDefs = [
-      { headerName: "Vendor Name", field: "vendor_name", width: 150,filter: 'text'},
-      { headerName: "Vendor ID", field: "vendor_id", width: 150,},,
-      { headerName: "Email", field: "email", width: 150 ,filter: 'text'},
-      { headerName: "Contact No.", field: "contact", width: 150 },
-      { headerName: "Company", field: "company", width: 150},
-      { headerName: "Location", field: "location", width: 150},
-      { headerName: "Start Date", field: "start_date", width: 150},
+      { headerName: "Vendor Name", field: "vendor_name", width: 200,filter: 'text'},
+      { headerName: "Vendor ID", field: "vendor_id", width: 200,},,
+      { headerName: "Email", field: "email", width: 200 ,filter: 'text'},
+      { headerName: "Contact No.", field: "contact", width: 200 },
+      { headerName: "Address", field: "address", width: 200 },
       
     ];
 
