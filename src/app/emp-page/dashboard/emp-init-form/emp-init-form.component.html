@@ -1,31 +1,55 @@
-<div class="form">
-  <div class="header-w3l">
-    <div class="center">
+<div class="container">
 
-      <div class="main-content-agile">
-        <div class="sub-main-w3">
-          <form action="#" method="post">
-
-            <h3>New Purchase Order</h3>
-            <br />
-            <div class="grid-container">
-              <input placeholder="Purchase Order #" name="Purchase order" type="text" required="">
-              <input placeholder="Purchase Order Date" name="Purchase_order_date" type="text" required="">
+  <div class="col-lg-9 well">
+    <div class="row">
+      <form>
+        <div class="col-sm-12">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <label>Purchase Order #</label>
+              <input type="text" placeholder="Purchase_Order " class="form-control">
             </div>
-            <div class="grid-container">
-              <input placeholder="Tower ID" name="towerid" type="number" required="">
-              <input placeholder="Tower Region" name="towerregion" type="text" required="">
-              <input placeholder="Service ID" name="serviceid" type="number" required="">
-              <input placeholder="Service Details" name="servicedetails" type="text" required="">
-              <input placeholder="Vendor ID" name="vendorid" type="number" required="">
-              <input placeholder="Vendor Name" name="vendorname" type="text" required="">
-
+            <div class="col-sm-6 form-group">
+              <label>Purchase Order Date</label>
+              <input type="text" placeholder="Purchase Order Date" class="form-control">
             </div>
-            <a href="#" class="btn btn-info btn-lg">
-              <span class="glyphicon glyphicon-ok"></span> Initiate P.O
-            </a>
-          </form>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4 form-group">
+              <label>Tower ID</label>
+              <input type="text" placeholder="Tower ID" class="form-control">
+            </div>
+            <div class="col-sm-4 form-group">
+              <label>Tower Region</label>
+              <input type="text" placeholder="Tower Region" class="form-control">
+            </div>
+            <div class="col-sm-4 form-group">
+              <label>Service ID</label>
+              <input type="text" placeholder="Service ID" class="form-control">
+            </div>
+          </div>
+          <div class="row">
+
+            <div class="col-sm-6 form-group">
+              <label>Description</label>
+              <input type="text" placeholder="Description" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Vendor ID</label>
+            <input type="text" placeholder="Vendor ID" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Vendor Name</label>
+            <input type="text" placeholder="Vendor Name" class="form-control">
+          </div>
+
+          <a href="#" class="btn btn-info btn">
+            <span class="glyphicon glyphicon-ok"></span> Initiate P.O
+          </a>
         </div>
-      </div>
+      </form>
     </div>
   </div>
+</div>

@@ -34,6 +34,12 @@ export class TowerGridComponent implements OnInit {
     ];
 
     this.ctlrowData = [    
+      { tower_id: "123", tower_name: "Tower123", state: "Maharashtra", city: "Pune", location:"Kalewadi" },
+      { tower_id: "123", tower_name: "Tower123", state: "Maharashtra", city: "Pune", location:"Kalewadi" },
+      { tower_id: "123", tower_name: "Tower123", state: "Maharashtra", city: "Pune", location:"Kalewadi" },
+      { tower_id: "123", tower_name: "Tower123", state: "Maharashtra", city: "Pune", location:"Kalewadi" },
+      { tower_id: "123", tower_name: "Tower123", state: "Maharashtra", city: "Pune", location:"Kalewadi" },
+      
     ];
   }
 

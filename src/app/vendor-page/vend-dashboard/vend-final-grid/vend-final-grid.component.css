@@ -1,20 +1,11 @@
 .grid {
-    margin-top: 70px;
+    margin-top: 7px;
 }
 .ag-header-cell-sorted-asc {
     color: white;    
 }
 .ag-header-cell span{
     color: white;
-}
-.add{
-    font-weight: bold;
-    float: right;
-    margin-right: 15px;
-    color: white;
-    font-size: 15px;
-    margin-top: 40px;
-    cursor: pointer;
 }
 .glyph{
     color: white;
@@ -27,4 +18,12 @@
     width: 100%;
     height: 100%;
     overflow: auto; /* Enable scroll if needed */
+}
+.view{
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding-left: 930px;
+    margin-top: 140px;
 }

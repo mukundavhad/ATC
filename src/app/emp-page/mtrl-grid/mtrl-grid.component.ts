@@ -34,7 +34,13 @@ export class MtrlGridComponent implements OnInit {
       { headerName: "Valid Through", field: "valid_through", width: 150 },
     ];
 
-    this.ctlrowData = [    
+    this.ctlrowData = [  
+      { material_name: "Wire", material_id: "011", parent_id: "123", description: "Wire Material", cost:"200", quantity:"5", valid_from:"20 Jan 2017", valid_through:"" },
+      { material_name: "Wire", material_id: "011", parent_id: "123", description: "Wire Material", cost:"200", quantity:"5", valid_from:"20 Jan 2017", valid_through:"" },
+      { material_name: "Wire", material_id: "011", parent_id: "123", description: "Wire Material", cost:"200", quantity:"5", valid_from:"20 Jan 2017", valid_through:"" },
+      { material_name: "Wire", material_id: "011", parent_id: "123", description: "Wire Material", cost:"200", quantity:"5", valid_from:"20 Jan 2017", valid_through:"" },
+      { material_name: "Wire", material_id: "011", parent_id: "123", description: "Wire Material", cost:"200", quantity:"5", valid_from:"20 Jan 2017", valid_through:"" },
+        
     ];
 
  

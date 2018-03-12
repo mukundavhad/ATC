@@ -33,6 +33,12 @@ export class ServGridComponent implements OnInit {
     ];
 
     this.ctlrowData = [    
+      { service_name: "Tower Problem", service_id: "011", description: "Tower Issue", unit_rate: "400", active:"07 Feb 2018", inactive:"" },
+      { service_name: "Tower Problem", service_id: "011", description: "Tower Issue", unit_rate: "400", active:"07 Feb 2018", inactive:"" },
+      { service_name: "Tower Problem", service_id: "011", description: "Tower Issue", unit_rate: "400", active:"07 Feb 2018", inactive:"" },
+      { service_name: "Tower Problem", service_id: "011", description: "Tower Issue", unit_rate: "400", active:"07 Feb 2018", inactive:"" },
+      { service_name: "Tower Problem", service_id: "011", description: "Tower Issue", unit_rate: "400", active:"07 Feb 2018", inactive:"" },
+       
     ];
 
   }

@@ -1,13 +1,14 @@
 <app-admin-menu></app-admin-menu>
 <div class="col-sm-8">
-  <h2>
-    <span class="glyphicon glyphicon-user"></span> Employees</h2>
+  <h3>
+    <span class="glyphicon glyphicon-user"></span> Employees</h3>
   <div class="text">
-    <a (click)="lgModal.show()"><span class="glyphicon glyphicon-plus"></span> Add Employee</a>
+    <a (click)="lgModal.show()">
+      <span class="glyphicon glyphicon-plus"></span> Add Employee</a>
   </div>
   <br />
   <br />
-  <ag-grid-angular class="ag-theme-fresh emp-grid" [rowData]="rowData" [columnDefs]="columnDefs">
+  <ag-grid-angular style="height: 250px; width: 1000px;" class="ag-theme-fresh emp-grid" [rowData]="rowData" [columnDefs]="columnDefs">
   </ag-grid-angular>
 
   <div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">

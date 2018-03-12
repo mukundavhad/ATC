@@ -54,6 +54,7 @@ import { VendMtrlGridComponent } from './vendor-page/vend-dashboard/vend-mtrl-gr
 import { VendFinalGridComponent } from './vendor-page/vend-dashboard/vend-final-grid/vend-final-grid.component';
 import { VendCmpltGridComponent } from './vendor-page/vend-dashboard/vend-cmplt-grid/vend-cmplt-grid.component';
 import { VendActionBoxComponent } from './vendor-page/vend-dashboard/vend-action-box/vend-action-box.component';
+import { ViewpoComponent } from './emp-page/dashboard/viewpo/viewpo.component';
 
 
 @NgModule({
@@ -92,7 +93,7 @@ import { VendActionBoxComponent } from './vendor-page/vend-dashboard/vend-action
     EmpInitFormComponent, 
     EmpMtrlFormComponent, 
     EmpFinalFormComponent, 
-    EmpCmpltFormComponent, CompanyListComponent, MtrlFormComponent, TwrFormComponent, ServFormComponent, VendDashboardComponent, VendHeaderComponent, VendInitGridComponent, VendMtrlGridComponent, VendFinalGridComponent, VendCmpltGridComponent, VendActionBoxComponent   
+    EmpCmpltFormComponent, CompanyListComponent, MtrlFormComponent, TwrFormComponent, ServFormComponent, VendDashboardComponent, VendHeaderComponent, VendInitGridComponent, VendMtrlGridComponent, VendFinalGridComponent, VendCmpltGridComponent, VendActionBoxComponent, ViewpoComponent   
     
   ],
   imports: [

@@ -1,4 +1,6 @@
 <app-vend-dashboard></app-vend-dashboard>
+<div class="view" (click)="lgModal.show()"><span class="glyphicon glyphicon-list-alt"></span> View P.O</div>
+
 <div class="col-sm-4 grid">
     <ag-grid-angular style="height: 250px; width: 1000px;" class="ag-theme-fresh" [rowData]="ctlrowData" [columnDefs]="ctlcolumnDefs"
             [gridOptions]="gridOptions"

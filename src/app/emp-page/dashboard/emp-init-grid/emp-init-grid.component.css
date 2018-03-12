@@ -1,5 +1,6 @@
 .grid {
     margin-top: 70px;
+    margin-left: 13px;
 }
 .ag-header-cell-sorted-asc {
     color: white;    
@@ -26,14 +27,13 @@
     float: left;
 }
 .modal-dialog {
-    width: 60%;
-    height: 100%;
+    width: 50%;
+    height: 90%;
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    overflow: scroll;
     outline: 0;
 }
 .modal-title{

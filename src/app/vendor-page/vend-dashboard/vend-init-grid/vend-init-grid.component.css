@@ -1,22 +1,11 @@
 .grid {
-    margin-top: 70px;
+    margin-top: 7px;
+    float: inherit;
 }
 .ag-header-cell-sorted-asc {
     color: white;    
 }
 .ag-header-cell span{
-    color: white;
-}
-.add{
-    font-weight: bold;
-    float: right;
-    margin-right: 15px;
-    color: white;
-    font-size: 15px;
-    margin-top: 40px;
-    cursor: pointer;
-}
-.add a{
     color: white;
 }
 .glyph{
@@ -38,5 +27,12 @@
 }
 .modal-title{
     margin-top: 5px;
-
+}
+.view{
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding-left: 930px;
+    margin-top: 140px;
 }

@@ -33,6 +33,12 @@ export class VendGridComponent implements OnInit {
     ];
 
     this.ctlrowData = [    
+      { vendor_name: "Sachin", vendor_id: "011", email: "sachin@gmail.com", contact: "7350867124", address:"Pune" },
+      { vendor_name: "Sachin", vendor_id: "011", email: "sachin@gmail.com", contact: "7350867124", address:"Pune" },
+      { vendor_name: "Sachin", vendor_id: "011", email: "sachin@gmail.com", contact: "7350867124", address:"Pune" },
+      { vendor_name: "Sachin", vendor_id: "011", email: "sachin@gmail.com", contact: "7350867124", address:"Pune" },
+      { vendor_name: "Sachin", vendor_id: "011", email: "sachin@gmail.com", contact: "7350867124", address:"Pune" },
+      
     ];
   }
 }
